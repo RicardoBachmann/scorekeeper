@@ -1,0 +1,20 @@
+.Player {
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: whitesmoke;
+  border: 2px solid lime;
+}
+
+.Player__name {
+  margin-right: auto;
+  text-align: center;
+}
+
+.Profile__image {
+  border: 2px solid rgb(93, 0, 255);
+  padding: 0.3rem;
+}
