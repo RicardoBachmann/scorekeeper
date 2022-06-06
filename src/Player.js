@@ -1,17 +1,18 @@
 import "./Player.css";
 
-export default function Player({ user }) {
+export default function Player({
+  user,
+  setCount,
+  increaseScore,
+  decreaseScore,
+}) {
   return (
     <li className="Player">
-      <span className="Player__name">{user.name}</span> <button>-</button>
+      <span className="Player__name">{user.name}</span>{" "}
+      <button onClick={increaseScore}>+</button>
       {user.score}
-      <button>+</button>
-      <img
-        className="Profile__image"
-        src={user.image}
-        alt={user.name}
-        height="100"
-      />
+      <button onClick={decreaseScore}>-</button>
+      <img className="Profile__image" src={user.image} alt={user.name} />
     </li>
   );
 }
