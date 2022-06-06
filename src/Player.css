@@ -1,12 +1,12 @@
 .Player {
   list-style: none;
-  padding: 10px;
-  margin: 5px;
+  padding: 0.7rem;
+  margin: 0.7rem;
   display: flex;
   gap: 20px;
   align-items: center;
   background-color: whitesmoke;
-  border: 2px solid lime;
+  border: 5px solid lime;
 }
 
 .Player__name {
@@ -16,5 +16,8 @@
 
 .Profile__image {
   border: 2px solid rgb(93, 0, 255);
-  padding: 0.3rem;
+  border-radius: 6px;
+  padding: 0.2rem;
+  height: 15vw;
+  width: auto;
 }

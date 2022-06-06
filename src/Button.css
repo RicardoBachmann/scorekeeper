@@ -1,9 +1,10 @@
 .Button {
-  padding: 12px;
+  padding: 0.5rem;
+  margin: 0.7rem;
   background-color: lime;
-  color: white;
+  font: inherit;
+  font-weight: 500;
+  color: rgb(93, 0, 255);
   border: none;
   border-radius: 6px;
-  font: inherit;
-  width: 100%;
 }
