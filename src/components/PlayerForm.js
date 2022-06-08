@@ -1,4 +1,4 @@
-import "../components/PlayerForm.css";
+import styled from "styled-components";
 
 export default function PlayerForm({ onCreatePlayer }) {
   function handleSubmit(event) {
@@ -12,7 +12,7 @@ export default function PlayerForm({ onCreatePlayer }) {
   }
 
   return (
-    <form className="PlayerForm" onSubmit={handleSubmit}>
+    <FormContainer className="PlayerForm" onSubmit={handleSubmit}>
       <label htmlFor="createPlayer">Name:</label>
       <input
         id="createPlayer"
@@ -20,7 +20,33 @@ export default function PlayerForm({ onCreatePlayer }) {
         type="text"
         placeholder="Just typ in"
       />
-      <button className="Create_button">Create player</button>
-    </form>
+      <button>Create player</button>
+    </FormContainer>
   );
 }
+
+const FormContainer = styled.form`
+  font: inherit;
+  font-weight: 500;
+  text-align: center;
+  color: lime;
+  display: grid;
+  gap: 10px;
+  background-color: rgb(93, 0, 255);
+
+  button {
+    padding: 10px;
+    margin: 0.7rem;
+    background-color: lime;
+    font: inherit;
+    font-weight: 500;
+    color: rgb(93, 0, 255);
+    border: none;
+    border-radius: 6px;
+  }
+
+  input {
+    border-color: lime;
+    padding: 0.5rem;
+  }
+`;
