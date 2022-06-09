@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Button from "./components/Button.js";
-import Player from "./components/Player.js";
-import PlayerForm from "./components/PlayerForm.js";
+import Button from "./components/Button/Button.js";
+import Player from "./components/Player/Player.js";
+import PlayerForm from "./components/Player/PlayerForm.js";
 import { getFromLocal, setToLocal } from "./lib/localStorage";
 import styled from "styled-components";
 import GlobalStyle from "./globalStyles.js";
@@ -46,6 +46,7 @@ function App() {
 
   return (
     <AppContainer>
+      <h1>HEY! Highscore time!</h1>
       <GlobalStyle />
       {/* eslint-disable-next-line */}
       <ul className="Card" role="list">
@@ -73,6 +74,12 @@ const AppContainer = styled.div`
   gap: 20px;
   border: 2px solid lime;
   background-color: rgb(93, 0, 255);
+
+  h1 {
+    color: lime;
+    text-align: center;
+    margin-top: 1rem;
+  }
 `;
 
 const ButtonContainer = styled.div`

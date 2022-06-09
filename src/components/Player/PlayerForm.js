@@ -12,7 +12,7 @@ export default function PlayerForm({ onCreatePlayer }) {
   }
 
   return (
-    <FormContainer className="PlayerForm" onSubmit={handleSubmit}>
+    <FormContainer onSubmit={handleSubmit}>
       <label htmlFor="createPlayer">Name:</label>
       <input
         id="createPlayer"
@@ -30,8 +30,6 @@ const FormContainer = styled.form`
   font-weight: 500;
   text-align: center;
   color: lime;
-  display: grid;
-  gap: 10px;
   background-color: rgb(93, 0, 255);
 
   button {
